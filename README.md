@@ -7,9 +7,7 @@ step1 - DFTB+ MD
 
 step2 - DFTB+ SCC calculation at each MD step - Here, we extract energies to be used in BL-NBRA-NAMD
 
-step3 - scripts for performing BL-NBRA-NAMD computations
-
-      - need to adjust the paths in the step3 files to the locaiton of step2 res folder
+step3 - scripts for performing BL-NBRA-NAMD computations. Also need to adjust the paths in the step3 files to the locaiton of step2 res folder
 
 F1  - Fluorine ligand with mass of 1 a.m.u
 
