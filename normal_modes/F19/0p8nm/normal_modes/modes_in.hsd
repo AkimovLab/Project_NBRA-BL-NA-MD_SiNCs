@@ -1,0 +1,21 @@
+#
+Geometry = GenFormat {
+   <<< "geo_end.gen"
+}
+
+SlaterKosterFiles = Type2FileNames {
+ Prefix = "/budgetdata/academic/alexeyak/brendan/Si_QD/pbc-0-3/"
+ Separator = "-"
+ Suffix = ".skf"
+}
+
+Hessian = {
+   <<< "hessian.out"
+}
+
+DisplayModes = {
+ PlotModes = -186:-1
+ Animate   = no
+ XMakeMol  = yes
+}
+

@@ -1,0 +1,38 @@
+#
+Geometry = GenFormat {
+   <<< "position.gen"
+}
+
+#Driver = SecondDerivatives {}
+Driver = ConjugateGradient{}
+
+Hamiltonian = DFTB {
+  SCC = Yes
+  Dispersion = LennardJones {
+    Parameters = UFFParameters {}
+  }
+  SlaterKosterFiles = Type2FileNames {
+    Prefix = "/budgetdata/academic/alexeyak/brendan/Si_QD/pbc-0-3/"
+    Separator = "-"
+    Suffix = ".skf"
+  }
+  MaxAngularMomentum = {
+    Si = "d"
+    H  = "s"
+  }
+  Filling = Fermi {
+    Temperature [K] = 0
+  }
+}
+
+Analysis = {
+}
+
+Options = {
+  WritedetailedOut = Yes
+}
+
+ParserOptions = {
+  ParserVersion = 4
+}
+

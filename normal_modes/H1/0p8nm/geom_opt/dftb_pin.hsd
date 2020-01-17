@@ -1,0 +1,152 @@
+Geometry = GenFormat {
+62  C
+Si  H
+1   1      11.96138000      20.48815000      28.00059000
+2   1      14.58228000      13.84326000      26.70080000
+3   1      18.32978000      19.69793000      24.60450000
+4   1      16.47037000      18.05353000      29.26109000
+5   1      12.99055000      20.53492000      29.97096000
+6   1      15.62885000      13.84603000      28.66255000
+7   1      19.40109000      19.73944000      26.55240000
+8   1      17.56650000      18.08522000      31.30857000
+9   1      13.33246000      17.17416000      27.42972000
+10   1      15.01846000      21.43197000      29.67840000
+11   1      17.68318000      14.67612000      28.35683000
+12   1      19.64612000      18.90241000      31.32054000
+13   1      16.30719000      18.83713000      24.92655000
+14   1      14.38157000      17.20168000      29.40435000
+15   1      16.48986000      16.78230000      25.74583000
+16   1      14.42996000      15.07994000      30.09185000
+17   1      18.23983000      21.03224000      27.96059000
+18   1      16.61284000      19.28000000      32.93820000
+19   1      15.19042000      20.07690000      26.39033000
+20   1      13.10425000      18.44113000      30.74936000
+21   1      19.57877000      17.63762000      27.29641000
+22   1      17.86063000      16.11431000      32.31936000
+23   1      13.15095000      19.22879000      26.60973000
+24   1      17.55036000      16.80836000      27.71436000
+25   1      14.44989000      15.93548000      25.96553000
+26   1      16.24617000      20.11489000      28.36123000
+27   2      10.61919000      19.91080000      28.16035000
+28   2      11.86246000      21.85327000      27.46486000
+29   2      15.34188000      13.03160000      25.73928000
+30   2      13.22904000      13.29391000      26.86609000
+31   2      18.20413000      21.06638000      24.08306000
+32   2      19.07374000      18.86175000      23.65178000
+33   2      12.19362000      21.37054000      30.88014000
+34   2      15.70927000      12.45723000      29.13663000
+35   2      20.73602000      20.31051000      26.32474000
+36   2      11.98742000      16.60932000      27.60526000
+37   2      14.86690000      22.74763000      29.04121000
+38   2      15.68135000      21.64900000      30.95418000
+39   2      18.48174000      14.54965000      29.56532000
+40   2      18.35806000      13.89632000      27.30975000
+41   2      20.60864000      18.09472000      30.57748000
+42   2      20.10067000      18.80918000      32.71552000
+43   2      19.72930000      20.32700000      31.01306000
+44   2      15.58479000      18.80244000      23.64733000
+45   2      17.25058000      15.95611000      24.79834000
+46   2      14.96729000      14.98592000      31.43965000
+47   2      13.05825000      14.55422000      30.13624000
+48   2      18.04986000      22.35267000      27.34390000
+49   2      18.97068000      21.24085000      29.20014000
+50   2      16.58953000      20.71796000      32.68789000
+51   2      17.49450000      19.13315000      34.10542000
+52   2      15.32963000      18.75249000      33.39210000
+53   2      15.08450000      21.44796000      25.87267000
+54   2      13.61368000      18.41796000      32.11102000
+55   2      11.74839000      17.87522000      30.78591000
+56   2      20.41736000      17.57362000      28.48249000
+57   2      20.23108000      16.82257000      26.26193000
+58   2      18.76053000      15.20914000      31.61098000
+59   2      16.62172000      15.47469000      32.75165000
+60   2      18.56676000      16.41348000      33.57361000
+61   2      12.48381000      19.18720000      25.30103000
+62   2      13.75996000      15.95159000      24.66814000
+}
+Driver = ConjugateGradient {
+  LatticeOpt = No
+  MovedAtoms = "1:-1"
+  MaxAtomStep = 0.200000000000000
+  MaxForceComponent = 1.000000000000000E-004
+  MaxSteps = 200
+  OutputPrefix = "geo_end"
+  AppendGeometries = No
+  ConvergentForcesOnly = Yes
+  Constraints = {}
+}
+Hamiltonian = DFTB {
+  SCC = Yes
+  Dispersion = LennardJones {
+    Parameters = UFFParameters {}
+  }
+  SlaterKosterFiles = Type2FileNames {
+    Prefix = "/budgetdata/academic/alexeyak/brendan/Si_QD/pbc-0-3/"
+    Separator = "-"
+    Suffix = ".skf"
+    LowerCaseTypeName = No
+  }
+  MaxAngularMomentum = {
+    Si = "d"
+    H = "s"
+  }
+  Filling = Fermi {
+    Temperature [K] = 0
+  }
+  Differentiation = FiniteDiff {
+    Delta = 1.000000000000000E-002
+  }
+  PolynomialRepulsive = {}
+  ShellResolvedSCC = No
+  OldSKInterpolation = No
+  RangeSeparated = None {}
+  ReadInitialCharges = No
+  InitialCharges = {}
+  SCCTolerance = 1.000000000000000E-005
+  Mixer = Broyden {
+    MixingParameter = 0.200000000000000
+    InverseJacobiWeight = 1.000000000000000E-002
+    MinimalWeight = 1.00000000000000
+    MaximalWeight = 100000.000000000
+    WeightFactor = 1.000000000000000E-002
+  }
+  HCorrection = None {}
+  SpinPolarisation = {}
+  ElectricField = {}
+  Solver = RelativelyRobust {}
+  Charge = 0.00000000000000
+  MaxSCCIterations = 100
+  OnSiteCorrection = {}
+  ThirdOrder = No
+  ThirdOrderFull = No
+  ForceEvaluation = "Traditional"
+}
+Analysis = {
+  ProjectStates = {}
+  WriteEigenvectors = No
+  WriteBandOut = Yes
+  MullikenAnalysis = Yes
+  AtomResolvedEnergies = No
+  CalculateForces = No
+}
+Options = {
+  WritedetailedOut = Yes
+  WriteAutotestTag = No
+  WriteDetailedXML = No
+  WriteResultsTag = No
+  RandomSeed = 0
+  WriteHS = No
+  WriteRealHS = No
+  MinimiseMemoryUsage = No
+  ShowFoldedCoords = No
+  TimingVerbosity = 1
+  WriteChargesAsText = No
+}
+ParserOptions = {
+  ParserVersion = 7
+  WriteHSDInput = Yes
+  WriteXMLInput = No
+  StopAfterParsing = No
+  IgnoreUnprocessedNodes = No
+}
+ExcitedState = {}
