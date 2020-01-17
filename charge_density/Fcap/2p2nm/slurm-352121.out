@@ -1,0 +1,6 @@
+SLURM_JOBID=352121
+SLURM_JOB_NODELIST=cpn-k05-22
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/352121
+working directory=/gpfs/.../budgetdata/academic/alexeyak/brendan/Si_QD/charge_density/SiF/2.2nm
+NPROCS=1
