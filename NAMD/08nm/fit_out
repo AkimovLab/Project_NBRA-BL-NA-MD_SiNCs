@@ -1,0 +1,96 @@
+
+ H1/1eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  1.1452427499999995 eV
+beta =  0.6196108612918696
+tau  =  102.94894399183691 fs
+B    =  0.0802064172715163
+
+ H1/2eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  2.1011651799999993 eV
+beta =  0.8582336495281242
+tau  =  126.46247732179965 fs
+B    =  0.08801239337752396
+
+ H1/3eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  3.095727229999999 eV
+beta =  0.7750772993090839
+tau  =  101.42079106396504 fs
+B    =  0.08786312053958913
+
+ H19/1eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  1.0656510000000003 eV
+beta =  0.6906125475239926
+tau  =  371.56362207788345 fs
+B    =  0.22331995914267178
+
+ H19/2eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  2.0234782000000093 eV
+beta =  0.84909030819847
+tau  =  360.35500747135694 fs
+B    =  0.23541760721349153
+
+ H19/3eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  2.9543665100000007 eV
+beta =  1.0003847105249675
+tau  =  395.02625886377206 fs
+B    =  0.24092115605234024
+
+ F1/1eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  0.8384391499999999 eV
+beta =  0.5648906524946881
+tau  =  561.3537459746439 fs
+B    =  1.650826067042159e-17
+
+ F1/2eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  1.9901442999999994 eV
+beta =  0.7552549452379881
+tau  =  316.6478781609881 fs
+B    =  0.07194163907861909
+
+ F1/3eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  2.948243609999999 eV
+beta =  0.7008685336387946
+tau  =  228.70791648086603 fs
+B    =  0.0789441343596225
+
+ F19/1eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  1.27109405 eV
+beta =  0.5552075142378146
+tau  =  3025.3402088660473 fs
+B    =  0.12831140557275225
+
+ F19/2eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  2.084158730000019 eV
+beta =  0.8511042023610695
+tau  =  1921.1546249238027 fs
+B    =  0.18879897556148503
+
+ F19/3eV/_out_Markov_.txt 
+
+Printing optimal fitting paramters:
+E0   =  2.9794006300001756 eV
+beta =  0.7979289054343899
+tau  =  1889.3580086753311 fs
+B    =  0.03571594628378114
