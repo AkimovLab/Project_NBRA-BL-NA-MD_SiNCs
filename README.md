@@ -22,7 +22,7 @@ This repository contains the working files used in the work "Hot Electron Coolin
 
 ## Normal Modes calculations
 
-1. normal_modes - This is divided into 3 sections. For each system considered in the normal modes analysis:
+1. Normal_modes - This is divided into 3 sections. For each system considered in the normal modes analysis:
     1. geom_opt - this folder contains scripts to perform geometry optimization using the SCC-DFTB method via the DFTB+ software.
     2. hessian  - the hessian is computed here. Also uses the SCC-DFTB method
     3. normal_modes - this folder contains scripts to compute the normal modes using the modes program within DFTB+
