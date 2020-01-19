@@ -17,7 +17,23 @@ This repository contains the working files used in the work "Hot Electron Coolin
     2. One can run step2 by running “python submit.py”. Inside ”submit.py”, one can set the number of sub-trajectories  to consider from step1, as well as assign the umber of workers and jobs per worker to perform the step2 computations. The script “check.py” checks to see the progress of the step2 calculation (ex. how many steps have been completed). 
     3. The script “get_properties.py” reads the energies from the “res” folder and outputs a file “en.txt”, which is used to plot the states’ energies vs. time. 
 
-3. step3 - scripts for performing BL-NBRA-NAMD computations. Also need to adjust the paths in the step3 files to the locaiton of step2 res folder
+3. Step3/4 (NAMD folder) - scripts for performing BL-NBRA-NAMD computations. Also need to adjust the paths in the step3 files to the locaiton of step2 res folder 
+    1. The driver script is "run_step4.py". Some people may be used to the typical NBRA workflow having only 3 steps. Past internal developments have lead to a 4th step being added (the NA-MD step was moved to step4). Step3 was made into a step that post-procresses the Hamiltonian. So here, we skip step3 and go right to step4, but it is labeled as step3 herein for ease. 
+
+## Normal Modes calculations
+
+1. normal_modes - This is divided into 3 sections. For each system considered in the normal modes analysis:
+    1. geom_opt - this folder contains scripts to perform geometry optimization using the SCC-DFTB method via the DFTB+ software.
+    2. hessian  - the hessian is computed here. Also uses the SCC-DFTB method
+    3. normal_modes - this folder contains scripts to compute the normal modes using the modes program within DFTB+
+
+## Charge density
+1. Uses the waveplot program within the DFTB+ software to compute charge densities
+
+## Analysis
+1. Scripts for computing energy gap distribution functions and the influence specta
+    1. en_dist - folder containing scripts for computing energy gap distribution functions  
+    2. inf_sp  - folder containing scripts for computing influence spectra
 
 ## POTENTIALLY USEFUL INFORMATION ##
 
@@ -28,6 +44,9 @@ H1  - Hydrogen ligand with mass of 1 a.m.u
 F19 - Fluorine ligand with mass of 19 a.m.u
 
 H19 - Hydrogen ligand with mass of 19 a.m.u
+
+Fcap - F-termination
+Hcap - H-termination
 
 xyz structure files can be found in step1 folders
 
